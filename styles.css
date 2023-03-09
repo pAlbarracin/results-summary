@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+    --Light-Red     : hsl(0, 100%, 67%);
+    --Orangey-Yellow: hsl(39, 100%, 56%);
+    --Green-Teal    : hsl(166, 100%, 37%);
+    --Cobalt-Blue   : hsl(234, 85%, 45%);
+    --White         : hsl(0, 0%, 100%);
+    --Pale-blue     : hsl(221, 100%, 96%);
+    --Light-Lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    --background-Light-Red     : hsl(0, 100%, 67%, 0.15);
+    --background-Orangey-Yellow: hsl(39, 100%, 56%,0.15);
+    --background-Green-Teal    : hsl(166, 100%, 37%, 0.15);
+    --background-Cobalt-Blue   : hsl(234, 85%, 45%,0.15);
+    
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    font-family: Hanken Grotesk;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container-result, .container-scores{
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-result{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    justify-content:space-evenly;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.container-result , .container-result p{
+    color: var(--Light-Lavender);
+}
+
+.container-result h2{
+    color: var(--White);
+    font-size: 1.5em!important;
+}
+
+.container-result .circle-title{
+    color: var(--White);
+    font-size: 3em!important;
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-title{
+    font-size: 3em!important;
+}
+
+.result-comment{
+    font-size: 0.9em;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.container-scores{ 
+    justify-content: space-around;
+    margin: 20px 30px;
+}
+
+.scores{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.div-title-score{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.div-title-score img{
+    margin-right: 10px;
+}
+
+.title-score1{
+    color: var(--Light-Red);
+}
+
+.title-score2{
+    color: var(--Orangey-Yellow);
+}
+
+.title-score3{
+    color: var(--Green-Teal);
+}
+
+.title-score4{
+    color: var(--Cobalt-Blue);
+}
+
+.container-scores p {
+    color: var(--Dark-gray-blue);
+}
+
+span{
+    color: var(--Light-Lavender);
+}
+
+button{
+    background-color: var(--Dark-gray-blue);
+    border: var(--Dark-gray-blue);
+    height: 5em;
+    color: var(--White);
+    border-radius: 50px;
+    font-weight: bolder;
+    
+}
+
+button:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.container-scores > .scores:nth-child(2){
+    background-color: var(--background-Light-Red);
+}
+
+.container-scores > .scores:nth-child(3){
+    background-color: var(--background-Orangey-Yellow);
+}
+
+.container-scores > .scores:nth-child(4){
+    background-color: var(--background-Green-Teal);
+}
+
+.container-scores > .scores:nth-child(5){
+    background-color: var(--background-Cobalt-Blue);
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+  }
+  
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+  }
+
+@media (max-width: 600px) {
+
+    main{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    section{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-result {
+        width: 100%;
+        border-radius: 0 0 30px 30px;
+        padding: 0 45px;
+    }
+
+    .container-scores{
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    
+    .attribution{
+        position: relative;
+    }
+
+}
